@@ -2,6 +2,9 @@
 
 This file is a manually maintained list of changes for each release
 
+## v0.0.7 (2016-02-04)
+* preparating for publish to npm
+
 ## v0.0.6 (2016-02-04)
 * added example.js
 * prepared some tests for future functions

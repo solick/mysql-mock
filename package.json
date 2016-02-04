@@ -1,6 +1,6 @@
 {
-  "name": "mysql-mock",
-  "version": "0.0.6",
+  "name": "mysql-mock-node",
+  "version": "0.0.7",
   "description": "mocking module for mysql based module testing",
   "main": "index.js",
   "scripts": {
@@ -11,13 +11,20 @@
     "mock",
     "test"
   ],
-  "author": "Lyn Matten",
-  "license": "ISC",
+  "author": {
+   "name": "Lyn Matten",
+    "email": "matten@lm-consult.com"
+  },
+  "license": "GNU GPL V3",
   "dependencies": {
     "mysql": "^2.9.0",
     "q": "^1.4.1"
   },
   "devDependencies": {
     "chai": "^3.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solick/mysql-mock"
   }
 }
