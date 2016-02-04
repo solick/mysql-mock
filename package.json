@@ -1,6 +1,6 @@
 {
   "name": "mysql-mock",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "mocking module for mysql based module testing",
   "main": "index.js",
   "scripts": {

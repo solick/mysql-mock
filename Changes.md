@@ -2,6 +2,10 @@
 
 This file is a manually maintained list of changes for each release
 
+## v0.0.6 (2016-02-04)
+* added example.js
+* prepared some tests for future functions
+
 ## v0.0.5 (2016-02-04)
 * fixed getConnection call to return correct callback
 * removed event emitter from constructors at pool and connection mock for similar behaviour to original mysql lib

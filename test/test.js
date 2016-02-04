@@ -46,6 +46,13 @@ describe('mysqlMock general interface', function() {
 
         expect(mysqlMock.format).to.exist;
     });
+/*
+    it('should have a releaseConnection function', function() {
+
+        expect(mysqlMock.releaseConnection).to.exist;
+    });
+*/
+
 
 });
 
@@ -66,7 +73,7 @@ describe("mysqlMock pool", function() {
     });
 });
 
-describe("mysqlMock pool connection", function() {
+describe("mysqlMock pool.getConnection", function() {
 
 
 
@@ -92,4 +99,24 @@ describe("mysqlMock pool connection", function() {
 
 
     });
+/*
+
+    it("should add a connection to the connectionList", function() {
+
+        expect.fail(0, 0, 'Not implemented yet!');
+
+    });
+*/
+
 });
+
+/*
+describe("mysqlMock pool.releaseConnection", function() {
+
+    it("should remove a connection from the connection list", function() {
+
+        expect.fail(0, 0, 'Not implemented yet!');
+    });
+
+
+});*/
