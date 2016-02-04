@@ -2,6 +2,10 @@
 
 This file is a manually maintained list of changes for each release
 
+## v0.0.4 (2016-02-04)
+* corrected some typos
+* added test command to package.json
+
 ## v0.0.3 (2016-02-03)
 * added tests based on mocha
 * added chai BDD support

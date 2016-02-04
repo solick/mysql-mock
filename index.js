@@ -5,7 +5,7 @@
 
 var mysqlOrig = require('mysql');
 
-/** provides a Mock für mysql and substitues relevant parts with a Mock class. The rest will be passed to the original mysql module **/
+/** provides a Mock für mysql and substitutes relevant parts with a Mock class. The rest will be passed to the original mysql module **/
 
 
 var sqlMock = [];
