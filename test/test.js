@@ -51,7 +51,7 @@ describe('mysqlMock general interface', function() {
 
 describe("mysqlMock pool", function() {
 
-    it("should create a pool", function(done) {
+    it("should create a pool", function() {
 
         var pool = mysqlMock.createPool({
             connectionLimit: 30,
@@ -62,17 +62,16 @@ describe("mysqlMock pool", function() {
             port: "someport"
         });
 
-        pool.on("connection", function() {
-
-            done();
-        });
-
+        expect(pool).to.exist;
     });
 });
 
 describe("mysqlMock pool connection", function() {
 
-    it("should create a pool connection and pass connection object via callback", function(done) {
+
+
+
+    it("should create and pass pool connection object via callback", function(done) {
 
         var pool = mysqlMock.createPool({
             connectionLimit: 30,
@@ -84,12 +83,11 @@ describe("mysqlMock pool connection", function() {
         });
 
 
-
-        pool.on("connection", function() {
-
-           done();
-       });
-
+        pool.getConnection(function(err, conn) {
+            if(conn != undefined && conn != null) {
+                done();
+            }
+        });
 
 
 
